@@ -1,0 +1,599 @@
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d2212a;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: auto;
+}
+.close-button,
+.close-button2 {
+  float: right;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  font-size: 85px;
+  padding-right: 25px;
+  padding-top: 25px;
+  font-family: "BasisGrotesquePro-Lt";
+  position: absolute;
+  right: 0px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.show-modal,
+.show-modal2 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 99999;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.book-modal {
+display: flex;
+    height: 100%;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.booka-job {
+  font-size: 30px;
+  line-height: 1.13;
+  font-family: "BasisGrotesquePro-Bd";
+  color: #fff;
+}
+
+.booka-job ~ p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.33;
+  margin: 20px 0px;
+}
+
+.booka-job {
+  margin-bottom: 10px;
+}
+
+.left {
+  flex: 1 0 40%;
+  padding-right: 40px;
+  padding-top: 0;
+}
+.right {
+  flex: 1 0 60%;
+  padding: 40px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.book-modal input,
+.book-modal textarea {
+  width: calc(100% - 40px);
+}
+
+.book-modal .wpcf7-submit {
+  height: 54px;
+  border-radius: 4px;
+  font-family: "BasisGrotesquePro-Bd";
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: center;
+  border: 2px solid #fff;
+  background: transparent;
+  margin: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: #a9a9a9;
+}
+
+.textwidget input,
+.textwidget textarea {
+  border: 0;
+  padding: 7px 15px;
+}
+
+#text-2 div,
+#text-3 div {
+  font-family: "BasisGrotesquePro-Bd";
+}
+#text-4 div {
+  font-size: 24px;
+  line-height: 1.42;
+}
+
+.book-modal input:not([type="submit"]) {
+  height: 49px;
+  font-size: 20px;
+  border: none;
+  font-family: "BasisGrotesquePro";
+  line-height: 1.7;
+  letter-spacing: normal;
+  color: #212121;
+  padding: 7px 15px;
+  margin: 10px;
+}
+
+.book-modal textarea {
+  font-size: 20px;
+  height: 148px;
+  border: none;
+  font-family: "BasisGrotesquePro";
+  line-height: 1.7;
+  letter-spacing: normal;
+  color: #212121;
+  margin: 10px;
+  padding: 7px 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px
+}
+
+.popup-container .grid-container {
+  grid-template-columns: auto;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+  margin-right: 100px;
+}
+
+.item4 {
+  grid-area: 2 / 3 / span 1 / span 1;
+}
+.item-fms {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+.item1 {
+  grid-area: 1 /1 / span 2 / span 1;
+  width: 293px;
+}
+.item2 {
+  grid-area: 1 / 2 / 2 / span 1;
+  width: 314px;
+}
+.item3{
+	width: 314px;
+}
+
+.grid-container ul.sub-menu li a,
+.grid-container ul > .menu-item > a {
+  text-decoration: none;
+  font-family: BasisGrotesquePro;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: normal;
+  color: #b0b0b0;
+}
+
+.modal ul.sub-menu{
+	margin-top: 20px;
+}
+
+#wpcf7-f238-o1 p {
+margin: 0;
+}
+
+.grid-container ul li {
+  list-style: none;
+  margin-bottom: 14px;
+}
+
+.grid-container .menu-item-74 a,
+.grid-container .menu-item-92 a,
+.grid-container .menu-item-91 a,
+.grid-container ul.main > li:first-child > a,
+.grid-container .menu-item-87 a {
+  color: #ffffff;
+  font-family: BasisGrotesquePro;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+}
+
+.grid-container ul:not(.sub-menu) > li > a {
+  font-family: BasisGrotesquePro-Bd !important;
+}
+
+.grid-container ul.main > li.menu-item:first-child::before {
+  content: "";
+  width: 5px;
+  height: 20px;
+  display: block;
+  background-color: #d2222a;
+  margin-bottom: 20px;
+}
+
+.triangle-4 {
+  width: 60px;
+  height: 30px;
+  border-bottom: solid 30px rgb(255, 255, 255);
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.triangle {
+  display: inline-block;
+  margin: 0 15px;
+  vertical-align: middle;
+}
+
+.nav-services {
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 10px;
+}
+
+.nav {
+  position: relative;
+}
+.services-options-popup {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  left: -590px;
+}
+.popup-container {
+  background-color: #ffffff;
+  width: 1180px;
+  height: auto;
+  margin-right: 100px;
+  padding: 35px 50px 40px;
+}
+
+.popup-container ul:not(.sub-menu) li:first-child::before {
+  content: "";
+  width: 5px;
+  height: 20px;
+  display: block;
+  background-color: #d2222a;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0px;
+}
+
+.popup-container #menu-fms {
+  position: relative;
+  padding-top: 35px;
+}
+
+.item5 {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+.item6 {
+  grid-area: 1 /2 / span 2 / span 1;
+  display: grid;
+  grid-gap: 30px;
+  margin-left: 80px;
+}
+
+.popup-container
+  .grid-container
+  ul:not(.sub-menu)
+  > li.menu-item:first-child
+  > a {
+  color: #212121;
+  font-size: 30px !important;
+  line-height: 1.13 !important;
+  font-family: "BasisGrotesquePro-Bd";
+}
+
+.services-options-popup .menu-item-79,
+.services-options-popup .menu-item-80,
+.services-options-popup .menu-item-81,
+.services-options-popup .menu-item-82,
+.services-options-popup .menu-item-83,
+.services-options-popup .menu-item-84 {
+  width: 50%;
+  float: left;
+}
+
+.services-options-popup .grid-container ul li a {
+  color: #212121;
+  font-size: 18px;
+  line-height: 1.33;
+  white-space: nowrap;
+}
+
+.services-options-popup ul.sub-menu {
+  margin-top: 15px;
+}
+
+.services-options-popup ul.sub-menu li a::before {
+  content: "";
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.services-options-popup .menu-item-75 a::before {
+  background-image: url("../images/onsite-repair.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-76 a::before {
+  background-image: url("../images/install.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-77 a::before {
+  background-image: url("../images/maintenance.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-78 a::before {
+  background-image: url("../images/fridge.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-79 a::before {
+  background-image: url("../images/handyman.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-80 a::before {
+  background-image: url("../images/electrical.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-81 a::before {
+  background-image: url("../images/plumbing.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-82 a::before {
+  background-image: url("../images/waste-management.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-83 a::before {
+  background-image: url("../images/pest-control.svg");
+  display: inline-block;
+}
+.services-options-popup .menu-item-84 a::before {
+  background-image: url("../images/cleaning.svg");
+  display: inline-block;
+}
+
+.services-options-popup .grid-container,
+.services-options-popup .item5,
+.services-options-popup .item6 {
+  padding: 0;
+  margin-right: 0;
+}
+
+.services-options-popup .grid-container ul li {
+  margin-bottom: 17px;
+}
+
+.nav-services:hover .services-options-popup {
+  display: inline-flex !important;
+}
+.nav-services:hover .triangle {
+  display: inline-flex !important;
+}
+
+.services-options-popup:hover {
+  display: inline-flex !important;
+}
+
+header {
+  overflow: visible;
+}
+header .nav-services p {
+  height: 100px;
+  padding-top: 43px;
+}
+
+/* responsive style here */
+
+@media (min-width: 768px) {
+  .model-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1185px) {
+  .grid-container > div {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.show-modal .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+		}
+  .item4 {
+    grid-area: 2 / 2 / span 1 / span 1;
+  }
+  .item1 {
+    grid-area: 1 /1 / span 1 / span 1;
+    width: auto;
+  }
+  .item2 {
+    grid-area: 1 / 2 / span 1 / span 1;
+    width: auto;
+  }
+  .item3 {
+    grid-area: 2 / 1 / span 1 / span 1;
+    width: 314px;
+  }
+  .grid-container > div {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .item4 {
+    grid-area: 4/ 1 / span 1 / span 1;
+  }
+  .item1 {
+    grid-area: 1 /1 / span 1 / span 1;
+    width: 263px;
+  }
+  .item2 {
+    grid-area: 2 / 1 / span 1 / span 1;
+    width: 314px;
+  }
+  .item3 {
+    grid-area: 3 / 1 / span 1 / span 1;
+    width: 314px;
+  }
+  .grid-container > div {
+    margin-right: 0px;
+  }
+  .grid-container {
+    justify-content: flex-start;
+    margin-top: 0px;
+  }
+  .grid-container ul li:first-child::before {
+    width: 2px;
+  }
+  .grid-container > div {
+    padding: 0;
+  }
+  .grid-container ul li {
+    margin-bottom: 5px;
+  }
+  .model-hidden {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .model-hidden .nav-contact-phone a {
+    font-size: 18px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 900;
+    font-family: "CircularStd";
+    text-decoration: none;
+    margin-right: 17px;
+  }
+  .model-hidden .nav-book-job button {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    border: 2px solid #fff;
+    padding: 9px 11.61px;
+    border-radius: 4px;
+    background-color: #212121;
+    margin-right: 0;
+    width: 110px;
+  }
+  .modal {
+    overflow: auto;
+  }
+  .model-hidden .nav-contact-image img {
+    width: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .grid-container .menu-item-74 a,
+  .grid-container .menu-item-92 a,
+  .grid-container .menu-item-91 a,
+  .grid-container .menu-item-87 a {
+    font-size: 20px;
+  }
+  .grid-container ul li a {
+    font-size: 16px;
+  }
+  .close-button {
+    padding-right: 5px;
+    padding-top: 5px;
+    font-size: 70px;
+  }
+  .flexslider-controls li a {
+    display: none;
+  }
+}
+@media (min-width: 996px) and (max-width: 1300px) {
+  .services-options-popup {
+    right: -645px;
+    left: -375px;
+  }
+  .popup-container {
+    width: 92%;
+  }
+}

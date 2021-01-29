@@ -1,0 +1,19 @@
+h1 : Headline / H1
+h2 : Intro Title / H2
+h3 : Section Title / H3
+h4 : Sub Title / H4
+h5 : H5
+p : Paragraph
+
+
+page-heading : Page Heading
+content-heading : Content Heading
+section-heading : Section Heading
+content-title : Content Title
+
+if (get_sub_field('title_tag')) 
+{$titletag = get_sub_field('title_tag');} 
+else { $titletag = "h2";}
+        
+if (get_sub_field('title_class')) 
+{$titleclass = get_sub_field('title_class');}
