@@ -1,13 +1,11 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup](#setup)
-
-## General info
-This project is simple Lorem ipsum dolor generator.
 	
 ## Technologies
-Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* WordPress: 5.6
+* CSS3
+* JS/jQuery
+
+## General info
+This project is developed using WordPress. Pure coding is involved without the use of Page Builder. Advanced Custom Field (ACF) is used to develop the custom fields and page templates. Minimum use of plugins and maximum optimization is taken in consideration during the development.
